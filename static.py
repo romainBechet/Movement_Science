@@ -1,7 +1,6 @@
-from scipy import signal 
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import chi, chi2
+from scipy.stats import chi2
 import matplotlib.pyplot as plt
 import math
 
