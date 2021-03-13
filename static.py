@@ -4,7 +4,6 @@ from scipy.stats import chi2
 import matplotlib.pyplot as plt
 import math
 
-
 class Static(): 
 
     def __init__(self, ML, AP, fs):
@@ -16,10 +15,13 @@ class Static():
         self.parameters = dict()
         
 
-    def get_parameters(self): 
+    def get_parameters(self, conf: float = 0.95): 
         """ Return all parameters we can get with a static analysis. 
         Parameters are calculated if they're not existing yet.
         For more information on parameters: Paillard T, Noé F. Techniques and Methods for Testing the Postural Function in Healthy and Pathological Subjects. Biomed Res Int. 2015;2015:891390. doi:10.1155/2015/891390
+
+        Args: 
+            [conf]: float for confidence interval for the ellipse, default 0.95
 
         Returns:
             [dict]: parameters
@@ -27,14 +29,14 @@ class Static():
         try: 
             int(self.ellipse_parameters['area'])
         except: 
-            self.confidence_ellipse_interval()
+            self.confidence_ellipse_interval(conf = conf)
 
         self.calculate_params()
         self.parameters['area_cop'] = self.ellipse_parameters['area']
         
         return self.parameters
 
-    def calculate_params(self): 
+    def calculate_params(self, conf: float = 0.95): 
         """
         Calculate the major part of parameters we can get with a static analysis. 
 
