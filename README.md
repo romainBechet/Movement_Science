@@ -2,7 +2,7 @@
 
 Few programs to analyze data collected on humans.
 
-The aim is to write again the scripts I used in the past, and make them more usable and flexible for different purposes.For each one, a example is done with real data to show how to use each class (`{name}_demo.ipynb`). Some open-source data coming from opublished articles can be used. In this case, authors and the article will be mentioned. 
+The aim is to write again the scripts I used in the past, and make them more usable and flexible for different purposes.For each one, a example is done with real data to show how to use each class (`{name}_demo.ipynb`). Some open-source data coming from published articles can be used. In this case, authors and the article will be mentioned. 
 
 The folder is in progress, some classes are not finished yet and can be improved. 
 
