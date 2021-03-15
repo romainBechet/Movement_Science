@@ -9,7 +9,7 @@ The folder is in progress, some classes are not finished yet and can be improved
 ## Static: 
 Data analysis for Postural static measurement with basic force plate. 
 
-**Calculated parameters: **
+__Calculated parameters:__
 - Mean Position
 - Length of the Center of Pressure (COP)
 - Length of the COP
@@ -20,11 +20,11 @@ Data analysis for Postural static measurement with basic force plate.
 
 Parameters from [Paillard T, Noé F. Techniques and Methods for Testing the Postural Function in Healthy and Pathological Subjects. Biomed Res Int. 2015;2015:891390. doi:10.1155/2015/891390](https://pubmed.ncbi.nlm.nih.gov/26640800/) (Chapter 5.1.2)
 
-**Plotting: **
+__Plotting:__
 - Center of Pressure path 
 - Ellipse Area 
 
-![alt -text](images\readme\static.png)
+![alt -text](https://github.com/romainBechet/Movement_Science/blob/master/images/readme/static.png)
 
 ''' TODO ''' 
 - Frequency Analysis 
