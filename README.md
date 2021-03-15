@@ -24,7 +24,7 @@ Parameters from [Paillard T, Noé F. Techniques and Methods for Testing the Post
 - Center of Pressure path 
 - Ellipse Area 
 
-![alt -text](images\readme\static.png)
+![alt -text](https://github.com/romainBechet/Movement_Science/blob/master/images/readme/static.png)
 
 ''' TODO ''' 
 - Frequency Analysis 
