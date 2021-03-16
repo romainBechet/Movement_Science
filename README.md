@@ -1,6 +1,6 @@
 # In Progress
 
-## TOC 
+## Table of Content
 
 1. [Damped Filter](#damped_filter)
 2. [Static](#static)
@@ -12,7 +12,7 @@ The aim is to write again the scripts I used in the past, and make them more usa
 The folder is in progress, some classes are not finished yet and can be improved. 
 
 ## Damped Filter: <a name="damped_filter"></a>
-Critically Damped Filter for sudden movements. 
+Critically Damped Filter for sudden movements. The filter can be used for Ground Reaction Forces (GRF) during locomotion or jumpping, as well as for kinematics data depending on the movement type. 
 
 Formula validation by Robertson DG, Dowling JJ. Design and responses of Butterworth and critically damped digital filters. J Electromyogr Kinesiol. 2003 Dec;13(6):569-73. doi: 10.1016/s1050-6411(03)00080-4. PMID: 14573371 ([full PDF](https://www.researchgate.net/publication/9043065_Design_and_responses_of_Butterworth_and_critically_damped_digital_filters)). 
 
