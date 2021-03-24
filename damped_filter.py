@@ -64,14 +64,27 @@ class Signal():
         n_plot = len(self.signals.columns)
         signals_name = self.signals.columns
         fig, axs = plt.subplots(n_plot, 1, sharex = True, figsize = (20,10))
-        for p in range(n_plot): 
-            axs[p].plot(self.time, self.signals[signals_name[p]], color = color_raw, label = label_raw, ls = style_raw, lw = width_raw)
-            axs[p].plot(self.time, self.damped_signals[signals_name[p]], color = color_damped, label = label_damped, ls = style_damped, lw = width_damped)
-            axs[p].legend()
-            axs[p].set_ylabel(signals_name[p])
+        if n_plot > 1: 
+            for p in range(n_plot): 
+                axs[p].plot(self.time, self.signals[signals_name[p]], color = color_raw, label = label_raw, ls = style_raw, lw = width_raw)
+                axs[p].plot(self.time, self.damped_signals[signals_name[p]], color = color_damped, label = label_damped, ls = style_damped, lw = width_damped)
+                axs[p].legend()
+                axs[p].set_ylabel(signals_name[p])
+
+                axs[-1].set_xlabel('Time (s)')
+                axs[-1].set_xlim(0, self.time.max())
         
-        axs[-1].set_xlabel('Time (s)')
-        axs[-1].set_xlim(0, self.time.max())
+        else: 
+            axs.plot(self.time, self.signals[signals_name], color = color_raw, label = label_raw, ls = style_raw, lw = width_raw)
+            axs.plot(self.time, self.damped_signals[signals_name], color = color_damped, label = label_damped, ls = style_damped, lw = width_damped)
+            axs.legend()
+            axs.set_ylabel(signals_name)
+
+            axs.set_xlabel('Time (s)')
+            axs.set_xlim(0, self.time.max())
+
+        
+        
 
         if plot_classic_butterworth == True: 
             self.classic_butterworth()
